@@ -22,7 +22,7 @@ export default function App() {
       <FlatList 
         data={filmes}
         keyExtractor={item => String(item.id)}
-        renderItem={({item}) => <Filmes /> }
+        renderItem={({item}) => <Filmes data={item} /> }
       />
     </View>
   );
